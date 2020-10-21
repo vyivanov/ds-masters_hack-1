@@ -1,0 +1,15 @@
+{
+    "Records": [
+        {
+            "usage_rights": "labeled-for-reuse-with-modifications",
+            "keywords": "covid+mask,covid+mask+man,covid+mask+woman,covid+mask+kid",
+            "metadata": true,
+            "extract_metadata": true,
+            "print_size": true,
+            "print_urls": true,
+            "no_numbering": false,
+            "type": "face",
+            "limit": 10
+        }
+    ]
+}
