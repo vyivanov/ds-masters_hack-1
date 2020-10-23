@@ -1,0 +1,12 @@
+{
+    "input":
+    {
+        "data_path": "../../data/",
+        "logs_path": "../data-grabber/logs/"
+    },
+
+    "output":
+    {
+        "spec_file": "../../spec.json"
+    }
+}
