@@ -5,7 +5,7 @@ This is hackathon output (MISIS, SkillFactory, 19.10.20 - 24.10.20)
 ## what the target is?
 
 Nowadays people all over the world wears different types of mask against COVID-19 situation.
-Some of them are intended for protection function (we call them OK), but other are not (we call them NG):
+Some of them are intended for protection function &ndash; we call them **OK**, but other are not &ndash; we call them **NG**.
 
 ![banner](src/banner.jpg)
 
@@ -38,7 +38,7 @@ Enjoy and wear right mask in right way!
 ## specification description
 
 ```
-"images": [ {   list of photos with meta-data:
+"images": [ {   list of photos with meta data:
     " ## ":       1. sequence number of the photo
     "path":       2. relative path to photo
     "link":       3. link to original source
@@ -48,13 +48,24 @@ Enjoy and wear right mask in right way!
 
 ## data collection methods
 
-For this purpose we used ready [google.images scrapper](https://github.com/hardikvasa/google-images-download). But there is a some problem with
-original code and it does not work out of the box. We found fix on issue tracker from 3rd party engineer and successfully
-[borrowed it](https://github.com/hardikvasa/google-images-download/issues/331#issuecomment-710092724). In order to make things done we wrapped
-the scrapper to our scripts, grabbed google images, manually marked the set and auto generated specification via separate scripts.
-All development stuff you can find in ```src/``` directory.
+For this purpose we used ready [google.images scrapper](https://github.com/hardikvasa/google-images-download).
+But there is a some problem with original code and it does not work out of the box. We found
+[fix on issue tracker](https://github.com/hardikvasa/google-images-download/issues/331#issuecomment-710092724)
+and successfully borrowed it.
+
+In order to make things done we wrapped the scrapper to our scripts, grabbed images, manually marked the set and auto generated
+specification via separate scripts.
+
+## performance metrics
+
+Existing image scrapper allowed us to grab **over 1500 photos** from google.images **in 30 minutes**. We have managed to filter
+not appropriate photos and garbage in a **couple of hours**. Totally **\~25%** of grabbed images had been got to our dataset.
 
 ## further plans
+
+- align photo formats: size, geometry, etc.
+- balance amount of photos in OK and NG cases
+- collect photos from other sources: [yandex.images](https://yandex.com/images/), [flickr](https://flickr.com/), etc.
 
 ## license agreement
 
